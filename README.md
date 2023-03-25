@@ -14,6 +14,9 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`openMap(...)`](#openmap)
+* [`checkHC()`](#checkhc)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -33,5 +36,40 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
+
+
+### openMap(...)
+
+```typescript
+openMap(options: OpenMapOptions) => Promise<void>
+```
+
+| Param         | Type                                                      |
+| ------------- | --------------------------------------------------------- |
+| **`options`** | <code><a href="#openmapoptions">OpenMapOptions</a></code> |
+
+--------------------
+
+
+### checkHC()
+
+```typescript
+checkHC() => Promise<boolean>
+```
+
+**Returns:** <code>Promise&lt;boolean&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### OpenMapOptions
+
+| Prop            | Type                |
+| --------------- | ------------------- |
+| **`latitude`**  | <code>number</code> |
+| **`longitude`** | <code>number</code> |
 
 </docgen-api>
